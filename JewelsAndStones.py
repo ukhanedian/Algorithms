@@ -1,10 +1,10 @@
-def numJewelsInStones(J, S):
-    jewelsIhave = 0
-    for jewel in J:
-        for stone in S:
+def numJewelsInStones(jewls, stones):
+    jewls_count = 0
+    for jewel in jewls:
+        for stone in stones:
             if jewel == stone:
-                jewelsIhave += 1
+                jewls_count += 1
     
-    return jewelsIhave
+    return jewls_count
 
 print (numJewelsInStones ("aA", "aAAbbbb"))
